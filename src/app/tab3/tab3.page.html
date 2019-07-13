@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Camera
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-grid>
+    <ion-col size-md="6" offser-md="3">
+      <ion-car>
+        <ion-card-header>
+          <ion-card-title>Camera</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <img src="foto" *ngIf="foto">
+          <ion-button (click)="capturarFoto()">Take a picture</ion-button>
+          <ion-button (click)="buscarFoto">Find picture</ion-button>
+        </ion-card-content>
+      </ion-car>
+    </ion-col>
+  </ion-grid>
+</ion-content>
