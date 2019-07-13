@@ -22,7 +22,7 @@ export class Tab3Page {
       saveToPhotoAlbum: true,
       sourceType: this.camera.PictureSourceType.CAMERA
     }).then(dataImage => {
-      this.foto = dataImage;
+      this.foto = 'data:image/jpeg;base64,' + dataImage;
     });
   }
 }
